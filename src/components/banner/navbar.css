@@ -1,0 +1,173 @@
+/* navbar.css */
+
+/* navbar.css */
+
+.cart-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.cart-content.visible {
+  transform: translateX(0);
+}
+
+.side-cart {
+  position: relative;
+}
+
+.main-container {
+  width: 100vw;
+}
+
+.img1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  height: 40px;
+  margin-left: 10px;
+  width: 40px;
+  border-radius: 50px;
+  background-color: #c4c4c4;
+  text-align: center;
+  line-height: 40px;
+}
+.logo {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  margin-top: 1rem;
+}
+.logos {
+  width: 4rem;
+  height: 4rem;
+}
+.number {
+}
+.lists {
+  margin-right: 20px;
+}
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+h1 {
+  color: #9db503;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.right-containers {
+  display: flex;
+}
+.left-containers {
+  display: flex;
+}
+.left-content {
+  display: flex;
+  color: #79819c;
+  margin-top: 10px;
+}
+.right-content {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.img-content {
+  display: flex;
+  margin-left: 4rem;
+  gap: 10px;
+}
+.cart-container {
+  position: relative;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.cart-content {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.cart-content.visible {
+  right: 0;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.nav-toggle-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  transform: translateX(100%);
+  z-index: 9999;
+  transition: transform 0.3s ease-in;
+}
+
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.close-icon-label {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  margin-bottom: 10px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="checkbox"]:checked ~ .nav-menu {
+  transform: translateX(0);
+}
